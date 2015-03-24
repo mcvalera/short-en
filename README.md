@@ -10,7 +10,7 @@ Short.en was the first project that I built on my own from the ground up. As suc
 
 #### What I Would Change
 
-I think I would like to someday attempt to recreate Short.en as a one-page Rails app, utilizing AJAX calls and manipulating the DOM with jQuery.
+I think I would like to someday attempt to recreate Short.en as a one-page Rails app, utilizing AJAX calls (at the very least to update click count, and for one-page aspect) and manipulating the DOM with jQuery (contemplating using jQuery in conjunction with animate.css to make the login and registration boxes shake when an error occurs).
 
 For what it is, it doesn't really need a lot of flair, but it's also due to its simplicity that I think it would make for a fairly nice environment to further my knowledge of what I can accomplish.
 
