@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+  <!--
+    normalize.css removes cross-browser differences in defaults, e.g.,
+    differences in how form elements appear between Firefox and IE
+    See: http://necolas.github.com/normalize.css/
+  -->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <!--
+    application.css is where you put your styles
+  -->
+  <link rel="stylesheet" href="/css/application.css">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/js/application.js"></script>
+
+  <title>short.en</title>
+</head>
+<body>
+  <!-- If logged in, show about, log out -->
+  <!-- If not registered, show About, Register, Log In -->
+  <div class="navigation">
+    <ul>
+      <!-- If session_logged_in? -->
+      <li><a href="/">Home</a></li>
+      <!-- NO ROUTE YET -->
+      <% if session_logged_in? %>
+        <% @username = session_current_user.username %>
+        <li><a href="/accounts/<%= @username %>">Profile</a></li>
+        <li><a href="/accounts/logout">Log Out</a></li>
+      <% else %>
+        <li><a href="/accounts/login">Log In</a></li>
+        <li><a href="/accounts/register">Register</a></li>
+      <% end %>
+    </ul>
+  </div>
+  <div class="wrapper">
+  <h1 id="title">short.en </h1>
+  <h3>for those pesky, long URLs</h3>
+    <%= yield %>
+  </div>
+</body>
+</html>

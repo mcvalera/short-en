@@ -1,0 +1,34 @@
+<div class="container">
+  <!-- <h1 id="title">short.en </h1>
+  <h3>for those pesky, long URLs</h3> -->
+  <% if @user %>
+    <p id="user_welcome">Welcome, <%= @user.name || @user.username%>!</p>
+  <% end %>
+
+  <form action="/urls" method="post" id="input_long_url">
+    <h4>Input your ridiculously long URL below:</h4>
+    <input type="text" name="long_url_input" style="width: 84%">
+    <input type="submit" value="shorten it!">
+  </form>
+  <br>
+</div>
+
+<div class="url_display">
+
+  <table>
+    <tr>
+      <th><p>Long Version</p></th>
+      <th><p>Petite Version</p></th>
+      <th><p>Clicks</p></th>
+    </tr>
+    <% @urls.each do |each_url| %>
+    <tr>
+      <td><p><%= each_url.full_url %></p></td>
+      <td><p><a href="/<%= each_url.shortened_url %>"><%= each_url.shortened_url %></a></p></td>
+      <td><p class="click_count"><%= each_url.click_count %></p></td>
+    </tr>
+    <% end %>
+  </table>
+
+</div>
+

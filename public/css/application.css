@@ -1,0 +1,121 @@
+/*--- WRAPPER FOR CONTAINER ---*/
+
+.wrapper h3 {
+  margin-top: 0px;
+}
+
+.wrapper {
+  width: 650px;
+  margin: 20px auto;
+  font-family: 'Julius Sans One', sans-serif;
+  border: 1px solid gray;
+  background-color: #FCF0F6;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/*--- SHORT.EN LOGO WITHIN WRAPPER ---*/
+
+h1#title {
+  font-size: 60px;
+  font-family: 'Sacramento', cursive;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+/*--- CONTAINER WITH ELMENTS YIELDED IN WRAPPER ---*/
+
+.container {
+  /*font-family: 'Julius Sans One', sans-serif;*/
+  font-family: 'Lato', sans-serif;
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted gray;
+}
+
+/*--- "Welcome, Name!" within index & profile ---*/
+
+#user_welcome {
+  font-family: 'Sacramento', cursive;
+  font-weight: bolder;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+/*--- For text "Input your ridic long URL below" ---*/
+
+#input_long_url h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*--- For logged in users table text "Your URLs" ---*/
+
+#users_urls {
+  font-family: 'Julius Sans One', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-weight: bolder;
+}
+
+/*--- table of urls ---*/
+
+.url_display {
+  font-family: 'Lato', sans-serif;
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted gray;
+}
+
+.url_display p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.url_display th p {
+  text-align: left;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/*--- STUFF YOU DON'T TOUCH AS OFTEN (layout.erb) & general css tags ---*/
+
+.click_count {
+  text-align: center;
+}
+
+.error_msg {
+  font-weight: bolder;
+  color: red;
+}
+
+/*--- NAVBAR ELEMENTS ---*/
+
+.navigation {
+  width: 100%;
+  display: block;
+}
+
+.navigation ul {
+  text-align: center;
+  display: block;
+}
+
+.navigation li {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: large;
+  display: inline-block;
+  margin-left: 55px;
+  margin-right: 55px;
+}
+
+a {
+  text-decoration: underline;
+  color: black;
+}
+
+

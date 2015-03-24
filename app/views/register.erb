@@ -1,0 +1,27 @@
+<div class="container">
+
+  <% if @errors != nil %>
+    <% @errors.each do |error| %>
+        <p class="error_msg"><%= error %></p>
+    <% end %>
+  <% end %>
+
+  <form action="/accounts/register" method="post">
+    <br>
+    Name:<br>
+    <input type="text" name="name" style="width:75%">
+    <br><br>
+    Choose a username:<br>
+    <input type="text" name="username" style="width:75%"> (Required)
+    <br><br>
+    Email:<br>
+    <input type="email" name="email" style="width:75%"> (Required)
+    <br><br>
+    Create a password:<br>
+    <input type="password" name="password" style="width:75%"> (Required)
+    <br><br>
+    <br>
+  <input type="submit" value="Register">
+  </form>
+</div>
+
